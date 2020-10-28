@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/// <summary>
+/// I have re-used code here that Adam kindly shared.
+/// </summary>
 
 public class JPRightHand : OVRGrabber //NOTE the OVRGrabber is NOT Monobehaviour
 {
-    public JPColourChange theCube; //this is just the cube which I move and change color
-    public Rotate rotateObject; //this is the script reference to rotate the cube in the distance
+    public JPColourChange theCube; //reference to the script used to change colour of an object
+    public Rotate rotateObject; //reference to script used to rotate objects
 
     // Start is called before the first frame update
     protected override void Start() //Override becasue not using monobehaviour now
@@ -22,7 +25,7 @@ public class JPRightHand : OVRGrabber //NOTE the OVRGrabber is NOT Monobehaviour
     /// <summary>
     /// This method gets the index finger pinch and then grabs the object
     /// if we are not pinching then we let go
-    /// I DONT HAVE GRAVITY ON MY OBJECTS BECASUE THEY EXIST IN SPACE AND WILL SNAP TO A GRID (Hopefully)
+    /// I DONT HAVE GRAVITY ON MY OBJECTS BECASUE THEY EXIST IN SPACE AND WILL SNAP TO A GRID (Hopefully) // REMOVE
     /// </summary>
     /// <param name="hand"> This passes the hand compnent from update into this function</param>
     public void checkIfPinchingObject(OVRHand hand)

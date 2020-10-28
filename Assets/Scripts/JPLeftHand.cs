@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class JPLeftHand : MonoBehaviour
 {
-    private bool touching = false;
-    public GameObject gameObject;
+    bool touching = false;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == "Pickup")
+        if (other.gameObject.CompareTag("Pickup"))
         {
             touching = true;
             //set the color of the object to red
@@ -32,7 +31,7 @@ public class JPLeftHand : MonoBehaviour
     }
 
     //on exit we will set the color back to normal
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         SetColour otherColor = other.gameObject.GetComponent<SetColour>();
         otherColor.SetBlack();
