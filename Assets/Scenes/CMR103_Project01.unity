@@ -3603,6 +3603,7 @@ GameObject:
   - component: {fileID: 1607714705}
   - component: {fileID: 1607714704}
   - component: {fileID: 1607714706}
+  - component: {fileID: 1607714707}
   m_Layer: 0
   m_Name: Track2UI
   m_TagString: Untagged
@@ -3683,7 +3684,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1bd95249c73ef74d9d408e2723c09e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetTime: 1
+--- !u!114 &1607714707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607714702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603cd1a69bad4b64aab7bcd2378466e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uIController: {fileID: 1659223497}
 --- !u!1 &1646335974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,7 +3709,6 @@ GameObject:
   - component: {fileID: 1646335977}
   - component: {fileID: 1646335976}
   - component: {fileID: 1646335978}
-  - component: {fileID: 1646335979}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Player
@@ -3809,19 +3821,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1646335979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646335974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b55a558882365848a9991b0c6964ab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstTouch: 0
 --- !u!1001 &1653459392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3927,13 +3926,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75cb6c41a4226b64299be585b204ce4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jPRightHandXR: {fileID: 1646335979}
-  uIColourBlink: {fileID: 0}
   firstTrackGrab: 0
   firstTrackPlace: 0
   secondTrackGrab: 0
   secondTrackPlace: 0
   excessiveTimeBetweenTrackPickup: 0
+  excessiveTimeToPlaceTrack1: 0
+  excessiveTimeToPlaceTrack2: 0
   firstTrackPiece: {fileID: 1678509129}
   secondTrackPiece: {fileID: 1607714702}
   trackPlacementSpot1: {fileID: 451600044187465912}
@@ -3979,6 +3978,7 @@ GameObject:
   - component: {fileID: 1678509132}
   - component: {fileID: 1678509131}
   - component: {fileID: 1678509133}
+  - component: {fileID: 1678509134}
   m_Layer: 0
   m_Name: Track1UI
   m_TagString: Untagged
@@ -4059,7 +4059,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1bd95249c73ef74d9d408e2723c09e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetTime: 1
+--- !u!114 &1678509134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678509129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f44b40065925a34cbf50bb5de29d1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uIController: {fileID: 1659223497}
 --- !u!114 &1745468840 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114567484643301796, guid: 835e735ca71bf78459fb2cababd74112,
@@ -5022,7 +5034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1bd95249c73ef74d9d408e2723c09e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetTime: 1
 --- !u!33 &451600044187465916
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5115,7 +5126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1bd95249c73ef74d9d408e2723c09e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetTime: 1
 --- !u!33 &1673720964201725420
 MeshFilter:
   m_ObjectHideFlags: 0

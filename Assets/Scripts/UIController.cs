@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    public JPRightHandXR jPRightHandXR;
-    public UIColourBlink uIColourBlink;
-    
+   
     public bool firstTrackGrab = false;
     public bool firstTrackPlace = false;
     public bool secondTrackGrab = false;
@@ -29,7 +27,7 @@ public class UIController : MonoBehaviour
     {
         StartCoroutine(InitialUI());
 
-        if (jPRightHandXR.firstTouch == true)
+        if (firstTrackGrab == true)
         {
             firstTrackGrab = true;
             firstTrackPiece.SetActive(false);
