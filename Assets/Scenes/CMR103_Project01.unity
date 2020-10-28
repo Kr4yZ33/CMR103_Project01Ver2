@@ -190,6 +190,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 384686706}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &696788557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7468812513171773911, guid: 7388c7e3b483acc469fa366931ec4d3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 878178867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &696788558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696788557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8bcfec23f9feca41a41d707691aceec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +516,7 @@ GameObject:
   - component: {fileID: 1702384006}
   - component: {fileID: 1702384010}
   - component: {fileID: 1702384005}
+  - component: {fileID: 1702384011}
   m_Layer: 0
   m_Name: ColourChangeCube
   m_TagString: Untagged
@@ -604,6 +623,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4016f427a2fd34482035f94bc0cb07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1702384011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702384004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8bcfec23f9feca41a41d707691aceec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1772363397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -693,6 +724,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touching: 0
+--- !u!114 &1772363401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772363398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8bcfec23f9feca41a41d707691aceec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2044515042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,7 +823,7 @@ BoxCollider:
   m_GameObject: {fileID: 2044515043}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -823,3 +866,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2044515047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044515043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8bcfec23f9feca41a41d707691aceec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
