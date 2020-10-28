@@ -24,11 +24,11 @@ public class JPColourChange : MonoBehaviour
     public void SetRandom()
     {
         int rand = Random.Range(1, 6);
-        r.material.color = randomColor(rand);
+        r.material.color = RandomColor(rand);
     }
 
     //use this method to select a random color...need to pass it a random value **********ADAM**********
-    public Color randomColor(int randomNumnber)
+    public Color RandomColor(int randomNumnber)
     {
         switch (randomNumnber)
         {
@@ -38,6 +38,8 @@ public class JPColourChange : MonoBehaviour
             case 4: return Color.magenta;
             case 5: return Color.cyan;
             case 6: return Color.green;
+            default:
+                break;
         }
         return Color.red;
     }

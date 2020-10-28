@@ -20,7 +20,7 @@ public class JPRightHand : OVRGrabber //NOTE the OVRGrabber is NOT Monobehaviour
     public override void Update() //again need to override
     {
         var hand = GetComponent<OVRHand>(); //store our hand
-        checkIfPinchingObject(hand); //Im passing hand here as an argument to the method im calling (its a little cleaner)
+        CheckIfPinchingObject(hand); //Im passing hand here as an argument to the method im calling (its a little cleaner)
     }
     /// <summary>
     /// This method gets the index finger pinch and then grabs the object
@@ -28,7 +28,7 @@ public class JPRightHand : OVRGrabber //NOTE the OVRGrabber is NOT Monobehaviour
     /// I DONT HAVE GRAVITY ON MY OBJECTS BECASUE THEY EXIST IN SPACE AND WILL SNAP TO A GRID (Hopefully) // REMOVE
     /// </summary>
     /// <param name="hand"> This passes the hand compnent from update into this function</param>
-    public void checkIfPinchingObject(OVRHand hand)
+    public void CheckIfPinchingObject(OVRHand hand)
     {
         //store whether finger is touching or not
         bool isIndexFingerPinching = hand.GetFingerIsPinching(OVRHand.HandFinger.Index);

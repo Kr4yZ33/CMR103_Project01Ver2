@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JPLeftHand : MonoBehaviour
 {
-    bool touching = false;
+    public bool touching = false;
 
     void OnTriggerEnter(Collider other)
     {
