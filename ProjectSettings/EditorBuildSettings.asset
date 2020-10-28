@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CMR103_Project01.unity
+    guid: 62d75a358d024064c8e385a044c08c37
   m_configObjects: {}
