@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickup
+  - TrackSideClosed
+  - TrackSideOpen
   layers:
   - Default
   - TransparentFX

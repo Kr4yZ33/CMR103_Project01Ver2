@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class TrackController : MonoBehaviour
 {
-    public GameObject piece1;
-    public GameObject piece2;
-    public bool trackUpsideDown;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isHeld; // a bool for if the track piece is being held or not.
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Function to handle different collisions with the side
+    /// this script is attached to
+    /// </summary>
+    /// <param name="other"></param>
+    void OnTriggerEnter(Collider other)
     {
-        CheckTrackAlignment();
-    }
-
-    void CheckTrackAlignment()
-    {
-        if (Vector3.Dot(piece1.transform.up, piece2.transform.up) > 0.7f)
+        if (other.CompareTag("Player")) // if the object colliding with us has the tag player
         {
-            Debug.Log("Facing same direction UP");
-            // They are roughly facing the same upwards
-            trackUpsideDown = false;
+            isHeld = true; // change the bool for isHeld on the Track Controller Script to true
         }
     }
-    
+
+    /// <summary>
+    /// Function handling what to do with colliders exiting ours
+    /// </summary>
+    /// <param name="other"></param>
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player")) // if the collider leaving our has the tag player
+        {
+            isHeld = false; // set the isHeld bool to false in the Track Controller script
+        }
+    }
 }
