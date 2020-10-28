@@ -7,6 +7,8 @@ TagManager:
   - Pickup
   - TrackSideClosed
   - TrackSideOpen
+  - TrackGap1
+  - TrackGap2
   layers:
   - Default
   - TransparentFX
