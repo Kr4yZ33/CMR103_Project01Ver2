@@ -9,6 +9,10 @@ TagManager:
   - TrackSideOpen
   - TrackGap1
   - TrackGap2
+  - LeftHand
+  - RightHand
+  - Horn
+  - Train
   layers:
   - Default
   - TransparentFX
@@ -18,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - VRRig
+  - Grabbable
   - 
   - 
   - 
