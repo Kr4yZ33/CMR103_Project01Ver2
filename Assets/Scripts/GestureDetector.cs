@@ -17,7 +17,7 @@ public class GestureDetector : MonoBehaviour
     public float threshold = 0.1f;
     public OVRSkeleton skeleton;
     public List<Gesture> gestures; // list inside the Gesture struct
-    public bool debugMode = true; // possible space might be used for other things 
+    //public bool debugMode = true; // possible space might be used for other things 
     private List<OVRBone> fingerBones;
     private Gesture previousGesture;
 
@@ -30,7 +30,7 @@ public class GestureDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (debugMode && Input.GetKeyDown(KeyCode.Space)) // if space is not being used already for something else, and it is pressed
+        if (Input.GetKeyDown(KeyCode.Space)) // if space is not being used already for something else, and it is pressed // removed debugMode &&  from if statement
         {
             fingerBones = new List<OVRBone>(skeleton.Bones);
             Save();
